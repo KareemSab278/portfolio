@@ -1,15 +1,19 @@
-body{
+
+section, h1, h2, .box, .skill-box, p, .cvlinktext, #bottone1 {
+    opacity: 0;
+    transform: translateY(20px);
+    will-change: opacity, transform;
+}
+
+body {
     margin-top: 20px;
     scroll-behavior: smooth;
     background-color: #000000;
-    opacity: 1;
     background-image: radial-gradient(#222222 1.05px, #000000 1.05px);
     background-size: 21px 21px;
-    margin-bottom: auto;
-    text-align: center;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
     margin-bottom: 100px;
+    text-align: center;
+    transition: background-color 2s ease, background-image 2s ease;
 }
 
 /* =================================== */
@@ -29,6 +33,14 @@ body{
     padding: 20px;
     max-width: 60%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+        gap: 10px;
+    }
 }
 
 .skill-box {
@@ -63,7 +75,7 @@ body{
 
 section {
     padding: 20px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.397); /* Light grey, slightly transparent */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
     margin-bottom: 20px;
     max-width: 60%;
     margin-left: auto;
@@ -87,7 +99,6 @@ ul{
     font-family: "Raleway", serif;
     
 } */
-
 
 a{  
     padding: 10px;
@@ -272,7 +283,20 @@ nav a:hover{
 
 /* ========================================== */
 
-/* Light Mode Styles */
+#toggle-mode {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Raleway", serif;
+    color: blanchedalmond;
+    cursor: pointer;
+}
+
+body.light-mode #toggle-mode {
+    color: #222222;
+}
+
 body.light-mode {
     background-color: #ffffff;
     color: #000000;
@@ -335,7 +359,7 @@ body.light-mode h2:hover {
 }
 
 body.light-mode section {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2); /* Darker border for visibility */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 
