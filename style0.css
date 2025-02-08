@@ -131,8 +131,8 @@ p{
     color: blanchedalmond;
     text-align: center;
     font-family: "Raleway", serif;
-    font-size: small;
-    color: rgb(141, 141, 141);
+    font-size: medium;
+    /* color: rgb(141, 141, 141); */
 }
 .tiny-text{
     color: blanchedalmond;
@@ -251,6 +251,7 @@ nav a:hover{
     text-align: center;
     cursor: pointer;
     transition: 0.5s;
+    margin-top: 20px;
 }
 
 #bottone1:hover {
