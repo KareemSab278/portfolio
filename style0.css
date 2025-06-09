@@ -31,7 +31,7 @@ body {
     gap: 15px;
     text-align: center;
     padding: 20px;
-    max-width: 60%;
+    max-width: 70%;
     margin: 0 auto;
 }
 
@@ -78,6 +78,18 @@ section {
     border-bottom: 1px solid rgba(255, 255, 255, 0.397);
     margin-bottom: 20px;
     max-width: 60%;
+    /* min-width: 60%; */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.projects-section {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.397);
+    margin-bottom: 20px;
+    max-width: 100%;
+    min-width: 60%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -132,6 +144,7 @@ p{
     text-align: center;
     font-family: "Raleway", serif;
     font-size: medium;
+    max-width: 90%;
     /* color: rgb(141, 141, 141); */
 }
 .tiny-text{
@@ -156,6 +169,7 @@ h2:hover{
 .cvlinktext {
     text-align: center;
     padding: 5px;
+    max-width: 110%;
     color: blanchedalmond;
     font-family: "Raleway", serif;
 }
@@ -283,6 +297,7 @@ nav a:hover{
 }
 
 /* ========================================== */
+
 
 #toggle-mode {
     background: none;
