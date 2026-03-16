@@ -1,16 +1,3 @@
-// document.getElementById('toggle-mode').addEventListener('click', function() {
-//     const body = document.body;
-//     const button = document.getElementById('toggle-mode');
-
-//     if (body.classList.contains('light-mode')) {
-//         body.classList.remove('light-mode');
-//         button.innerHTML = '<b>Light Mode</b>';
-//     } else {
-//         body.classList.add('light-mode');
-//         button.innerHTML = '<b>Dark Mode</b>';
-//     }
-// });
-
 document.addEventListener("DOMContentLoaded", () => {
   const elementsToAnimate = document.querySelectorAll(
     "section, h1, h2, .box, .skill-box, p, .cvlinktext, #bottone1"
@@ -43,4 +30,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// lol i stole this from a website i found on google
