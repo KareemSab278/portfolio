@@ -3,6 +3,7 @@
    ========================================= */
 :root {
   --accent: #d5f365;
+  --repo-link: rgba(200, 255, 0, 0.856);
   --accent-glow: rgba(213, 243, 101, 0.25);
   --bg: #000000;
   --bg-card: #0b0b0b;
@@ -66,7 +67,7 @@ body {
   gap: 4px;
   margin: 0;
   padding: 0;
-  margin-bottom: 2px;
+  margin-bottom: 0.7px;
 
 }
 
@@ -358,13 +359,13 @@ h2:hover { text-shadow: 0 0 20px rgba(255, 255, 255, 0.3); }
 }
 
 .project-links a {
-  font-size: 0.82rem;
+  font-size: 0.90rem;
   font-weight: 700;
   padding: 5px 14px;
-  background: rgba(213, 243, 101, 0.07);
+  background: rgb(36, 36, 36);
   border: 1px solid rgba(213, 243, 101, 0.22);
   border-radius: 8px;
-  color: var(--accent);
+  color: var(--repo-link);
   text-decoration: none;
   transition: background 0.2s ease, box-shadow 0.2s ease;
   letter-spacing: 0.3px;
