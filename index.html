@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,262 +14,171 @@
 </head>
 
 <body>
-  <header>
-    <br />
-    <h1>Kareem Elsabrouty</h1>
-  </header>
 
-  <section>
-    <div>
-      <a href="mailto:kareemsab278@gmail.com" target="_blank"><button id="bottone1"><b>Send Email✉️</b></button></a>
-      <a href="https://www.linkedin.com/in/kareem-elsabrouty-3a4a1937a/" target="_blank"><button id="bottone1"><b>My
-            LinkedIn💼</b></button></a>
-      <a href="images/CV2026.pdf" target="_blank"><button id="bottone1"><b>Download CV📄</b></button></a>
-      <a href="https://github.com/KareemSab278" target="_blank"><button id="bottone1"><b>My GitHub🤖</b></button></a>
-    </div>
-    <br /><br />
-  </section>
-  <section>
-    <h2 id="about">About Me</h2>
-    <p class="cvlinktext">
-      <b>Junior developer mainly working in JS and occasionally other
-        languages.<br />
-        <br />I focus on writing clean code and systems collaboratively at
-        work.<br />
-        <br />In my free time I'm experimenting and learning by building
-        personal projects.</b>
-    </p>
-    <br />
+  <nav class="navbar" id="navbar">
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link">Main</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Tech Stack</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
-    <br /><br />
-  </section>
-  <section>
-    <h2 id="skills">Tech Stack</h2>
-    <div class="skills-container">
-      <div class="skills-grid">
-        <div class="skill-box">
-          <img src="images/JavaScript.png" alt="JavaScript" />
-          JavaScript
-        </div>
-        <div class="skill-box">
-          <img src="images/rust.png" alt="Rust" />
-          Rust
-        </div>
-        <div class="skill-box">
-          <img src="images/React.svg" alt="React" />
-          React
-        </div>
-        <div class="skill-box">
-          <img src="images/MongoDb.png" alt="MongoDB" />
-          MongoDB
-        </div>
-
-        <div class="skill-box">
-          <img src="images/sql.png" alt="SQL" />
-          SQL
-        </div>
-
-        <div class="skill-box">
-          <img src="images/express.png" alt="Express.js" />
-          Express.js
-        </div>
+  <header id="home">
+    <div class="hero-content">
+      <h1>Kareem Elsabrouty</h1>
+      <p class="hero-subtitle">
+        Junior Dev
+        &nbsp;&middot;&nbsp;
+        JS &amp; Rust
+      </p>
+      <div class="hero-buttons">
+        <a href="https://github.com/KareemSab278" target="_blank"><button class="bottone1"><b>GitHub
+              &#129302;</b></button></a>
+        <a href="images/CV2026.pdf" target="_blank"><button class="bottone1"><b>Download CV &#128196;</b></button></a>
+        <a href="mailto:kareemsab278@gmail.com" target="_blank"><button class="bottone1"><b>Send Email
+              &#9993;</b></button></a>
+        <a href="https://www.linkedin.com/in/kareem-elsabrouty-3a4a1937a/" target="_blank"><button
+            class="bottone1"><b>LinkedIn &#128188;</b></button></a>
       </div>
     </div>
-    <br />
-    <br />
-  </section>
-  <projects-section>
-    <h2>My Projects</h2>
+  </header>
 
-    <div class="box">
-      <b style="font-size: x-large">Ordering System</b><br /><br />
-      <p class="smol-text">
-        A touchscreen ordering system built for vending machines and
-        smart fridges. The app talks to multiple hardware devices and
-        contactless payment terminals, then dispenses items automatically.
-        The frontend keeps the UI simple and friendly, while a small Rust
-        server runs locally to let managers edit products from any browser.
-        Everything (payment, dispensing and product refresh) is automated so
-        the machine can run unattended and has OTA updates.
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p class="cvlinktext">
+        <b>Hardware, backend, and frontend — I build it.
+          <br /><br />
+          I like working on things that bring value, from building a contactless payment system for the Raspberry Pi
+          to building full-stack platforms and embedded integrations.
+          <br /><br />
+          Recently shipped systems using Rust, JavaScript, Python, and PHP, with a focus on clean architecture,
+          performance, and reliability.</b>
       </p>
-      <br />
-      <a href="https://github.com/KareemSab278/ordering_system" target="_blank" style="font-size: large">Repository</a>
-    </div>
-    <br />
+    </section>
 
-    <div class="box">
-      <b style="font-size: x-large">Code Editor</b><br /><br />
-      <p class="smol-text">
-        A code editor built using Rust's Tauri framework and React for the GUI.
-        I built it to learn how to create a useful desktop application,
-        and also because I wanted a more fast and simpler code editor.
-        It runs smoother than VSCode and with far less resource usage even on a Raspberry Pi,
-        and has hotkeys to launch a file explorer I built or a terminal in the active directory.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/editor-lite" target="_blank" style="font-size: large">Repository</a>
-    </div>
-    <br />
+    <section id="skills">
+      <h2>Tech Stack</h2>
+      <div class="skills-container">
+        <div class="skills-grid">
+          <div class="skill-box"><img src="images/JavaScript.png" alt="JavaScript" />JavaScript</div>
+          <div class="skill-box"><img src="images/rust.png" alt="Rust" />Rust</div>
+          <div class="skill-box"><img src="images/React.svg" alt="React" />React</div>
+          <div class="skill-box"><img src="images/MongoDb.png" alt="MongoDB" />MongoDB</div>
+          <div class="skill-box"><img src="images/sql.png" alt="SQL" />SQL</div>
+          <div class="skill-box"><img src="images/express.png" alt="Express.js" />Express.js</div>
+        </div>
+      </div>
+    </section>
 
+    <section id="projects" class="projects-section">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
 
-    <div class="box">
-      <b style="font-size: x-large">Jarvis Jr</b><br /><br />
-      <p class="smol-text">
-        A local frontend UI that works with a backend API to communicate with
-        a personal locally running LLM. Built with React for the frontend,
-        Ollama for the LLM, and FastAPI for the backend. Features include chat
-        history management with local storage, Redux state management, and
-        real-time message streaming from the LLM.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/Jarvis-Jr" target="_blank" style="font-size: large">Repository</a>
-    </div>
-    <br />
+        <div class="box">
+          <b class="project-title">Ordering System</b>
+          <div class="project-tags"><span class="tag">JS</span><span class="tag">Rust</span><span
+              class="tag">Hardware</span></div>
+          <p class="smol-text">A touchscreen ordering system built for vending machines and smart fridges. Talks to
+            multiple hardware devices and contactless payment terminals, then dispenses items automatically. A small
+            Rust server runs locally for managers to edit products from any browser. Payment, dispensing, and product
+            refresh are all automated with OTA updates.</p>
+          <div class="project-links"><a href="https://github.com/KareemSab278/ordering_system"
+              target="_blank">Repository</a></div>
+        </div>
 
+        <div class="box">
+          <b class="project-title">Code Editor</b>
+          <div class="project-tags"><span class="tag">Rust</span><span class="tag">Tauri</span><span
+              class="tag">React</span></div>
+          <p class="smol-text">A code editor built with Rust's Tauri framework and React. Runs smoother than VSCode with
+            far less resource usage, even on a Raspberry Pi. Includes hotkeys to launch a custom file explorer or a
+            terminal in the active directory.</p>
+          <div class="project-links"><a href="https://github.com/KareemSab278/editor-lite"
+              target="_blank">Repository</a></div>
+        </div>
 
+        <div class="box">
+          <b class="project-title">Jarvis Jr</b>
+          <div class="project-tags"><span class="tag">React</span><span class="tag">FastAPI</span><span
+              class="tag">Python</span><span class="tag">Ollama</span></div>
+          <p class="smol-text">A local frontend UI backed by a FastAPI server to communicate with a locally running LLM
+            via Ollama. Features chat history with local storage, Redux state management, and real-time message
+            streaming.</p>
+          <div class="project-links"><a href="https://github.com/KareemSab278/Jarvis-Jr" target="_blank">Repository</a>
+          </div>
+        </div>
 
+        <div class="box">
+          <b class="project-title">C Backend</b>
+          <div class="project-tags"><span class="tag">C</span><span class="tag">REST API</span><span
+              class="tag">JSON</span></div>
+          <p class="smol-text">Built a database-backed HTTP server in C from scratch, returning JSON output, handling
+            requests, and connecting to a frontend without any frameworks.</p>
+          <div class="project-links"><a href="https://github.com/KareemSab278/C-Backend" target="_blank">Repository</a>
+          </div>
+        </div>
 
+        <div class="box">
+          <b class="project-title">StoriVault</b>
+          <div class="project-tags"><span class="tag">MongoDB</span><span class="tag">Express</span><span
+              class="tag">React</span><span class="tag">Node</span></div>
+          <p class="smol-text">Full-stack collaborative web app where users create and manage serialized stories with
+            chapters, review others work, and authenticate via JWT and cookie-based sessions. Features dynamic search
+            and user profiles.</p>
+          <div class="project-links">
+            <a href="https://github.com/KareemSab278/storivault" target="_blank">Repository</a>
+            <a href="https://storivault.pages.dev/" target="_blank">Demo</a>
+          </div>
+        </div>
 
+        <div class="box">
+          <b class="project-title">Restaurant Landing Page</b>
+          <div class="project-tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Vanilla
+              JS</span></div>
+          <p class="smol-text">A simple and sleek landing page for a restaurant.</p>
+          <div class="project-links"><a href="https://kareemsab278.github.io/Dine-and-Wine/" target="_blank">Demo</a>
+          </div>
+        </div>
 
-    <div class="box">
-      <b style="font-size: x-large">C backend</b><br /><br />
-      <p class="smol-text">
-        Learned how to work with a database using C, returning JSON output,
-        handling requests, and linked to a frontend. All built from the ground
-        up from scratch and utlizing my C Server.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/C-Backend" target="_blank" style="font-size: large">Repository</a>
-    </div>
-    <br />
+        <div class="box">
+          <b class="project-title">CRUD Management System</b>
+          <div class="project-tags"><span class="tag">C#</span><span class="tag">SQL Server</span></div>
+          <p class="smol-text">Full CRUD management system built in C# with SQL Express. Features robust data validation
+            and full database operation coverage.</p>
+          <div class="project-links"><a href="https://github.com/KareemSab278/CRUD-Management-System"
+              target="_blank">Repository</a></div>
+        </div>
 
-    <div class="box">
-      <b style="font-size: x-large">StoriVault (MERN Stack)</b><br /><br />
-      <p class="smol-text">
-        Full-stack web app built collaboratively. Users create and manage
-        serialized stories with chapters, review others’ work, and
-        authenticate via JWT and cookie-based sessions. Features dynamic
-        search, reviews, and user profiles.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/storivault" target="_blank" style="font-size: large">Repository</a>
-      <a href="https://storivault.pages.dev/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
+        <div class="box">
+          <b class="project-title">To-Do App</b>
+          <div class="project-tags"><span class="tag">Vanilla JS</span></div>
+          <p class="smol-text">A simple To-Do app for personal use.</p>
+          <div class="project-links"><a href="https://kareemsab278.github.io/ToDo-app/" target="_blank">Demo</a></div>
+        </div>
 
-    <div class="box">
-      <b style="font-size: x-large">Hotel Booking POS System (React & Flask)</b><br /><br />
-      <p class="smol-text">
-        Full-stack booking system built with React, TypeScript, and a Flask
-        API. Features full CRUD, real-time price calculation based on booking
-        preferences, and keyboard-based deletion. UI built with Material UI.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/booking-system" target="_blank" style="font-size: large">Repository</a>
-      <a href="https://kareemsab278.github.io/booking-system/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
+        <div class="box">
+          <b class="project-title">Calculator App</b>
+          <div class="project-tags"><span class="tag">Vanilla JS</span></div>
+          <p class="smol-text">(yes, a calculator)</p>
+          <div class="project-links"><a href="https://kareemsab278.github.io/calculator/" target="_blank">Demo</a></div>
+        </div>
 
-    <div class="box">
-      <b style="font-size: x-large">Live Chat App (MERN Stack)</b><br /><br />
-      <p class="smol-text">
-        Built a real-time chat application with MongoDB, Node.js, Express.js,
-        and React. Includes account creation, sign-in authentication, and user
-        search features.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/ChatApp" target="_blank" style="font-size: large">Repository</a>
-      <a href="https://kareemsab278.github.io/ChatApp/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
+      </div>
+    </section>
+  </main>
 
-    <div class="box">
-      <b style="font-size: x-large">Restaurant Landing Page (Valnilla)</b><br /><br />
-      <p class="smol-text">
-        Built a simple and sleek landing page for a restaurant.
-      </p>
-      <br />
-      <a href="https://kareemsab278.github.io/Dine-and-Wine/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
+  <footer>
+    <p class="tiny-text">Kareem Elsabrouty &middot; 2026</p>
+  </footer>
 
-    <div class="box">
-      <b style="font-size: x-large">Company Cleaning Services Website (Vanilla)</b><br /><br />
-      <p class="smol-text">
-        Built a professional website for a cleaning service with an
-        interactive "Before & After" slider and a contact form using EmailJS.
-      </p>
-      <br />
-      <a href="https://vera-cleaning.co.uk/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">&#8593;</button>
 
-    <div class="box">
-      <b style="font-size: x-large">CRUD Management System (C# & SQL Express)</b><br /><br />
-      <p class="smol-text">
-        Developed a full CRUD management system using C# in Visual Studio,
-        with SQL Express for database management. Features CRUD operations and
-        robust data validation.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/CRUD-Management-System" target="_blank"
-        style="font-size: large">Repository</a>
-    </div>
-    <br />
-
-    <div class="box">
-      <b style="font-size: x-large">Employee Management System (MERN Stack)</b><br /><br />
-      <p class="smol-text">
-        Built an employee management system with React and MongoDB. Managers
-        can track tasks, progress, and upload images for work validation.
-      </p>
-      <br />
-      <a href="https://github.com/KareemSab278/VeraCleaningFrontend" target="_blank"
-        style="font-size: large">Frontend</a>
-      <a href="https://github.com/KareemSab278/VeraCleaningBackend" target="_blank" style="font-size: large">Backend</a>
-      <a href="https://kareemsab278.github.io/VeraCleaningFrontend/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
-
-    <div class="box">
-      <b style="font-size: x-large">Social Media Video Downloader (Python)</b><br /><br />
-      <p class="smol-text">
-        Developed a mobile-friendly web app to download videos from Instagram,
-        and X.
-      </p>
-      <br />
-      <a href="https://vidownloader-net.onrender.com/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
-
-    <div class="box">
-      <b style="font-size: x-large">Bad Companies Website (Vanilla and Node.js)</b><br /><br />
-      <p class="smol-text">
-        Created a site listing companies with bad business practices.
-      </p>
-      <br />
-      <a href="https://kareemsab278.github.io/NoThanksCloneFrontEnd/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
-
-    <div class="box">
-      <b style="font-size: x-large">Simple To-Do App (Vanilla)</b><br /><br />
-      <p class="smol-text">Developed a simple To-Do app for personal use.</p>
-      <br />
-      <a href="https://kareemsab278.github.io/ToDo-app/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
-
-    <div class="box">
-      <b style="font-size: x-large">Calculator App (Vanilla)</b><br /><br />
-      <p class="smol-text">(yes, a calculator)</p>
-      <br />
-      <a href="https://kareemsab278.github.io/calculator/" target="_blank" style="font-size: large">Demo</a>
-    </div>
-    <br />
-  </projects-section><br /><br />
-  <p class="smol-text">Kareem Elsabrouty - 2026</p>
+  <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 
 </html>
